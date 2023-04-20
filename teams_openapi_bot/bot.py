@@ -16,7 +16,7 @@ class MyBot(ActivityHandler):
         # Select the LLM to use. Here, we use text-davinci-003
         llm = OpenAI(temperature=0, max_tokens=700) # You can swap between different core LLM's here.
 
-        # Save the set of supported YAMLs in an array
+        # Save the set of supported YAMLs in an array (gallery at https://www.getit.ai/gpt-plugins)
         supported_yaml_urls = [
             "https://api.speak.com/openapi.yaml", # (works)
             "https://www.klarna.com/us/shopping/public/openai/v0/api-docs/", # (works)
@@ -30,7 +30,7 @@ class MyBot(ActivityHandler):
             "https://chatgpt-plugin-dexa-lex-fridman.transitive-bullshit.workers.dev/openapi.json", # Searches Lex Friedman's podcast
             "https://websearch.plugsugar.com/api/openapi_yaml", # Search web (works)
             "https://server.shop.app/openai/v1/api.json", # Search for products
-            "https://gptweather.skirano.repl.co/openapi.yaml", # Weather
+            #"https://gptweather.skirano.repl.co/openapi.yaml", # Weather
         ]
 
         # Create a list of natural language tools
