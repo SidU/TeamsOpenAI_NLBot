@@ -18,8 +18,20 @@ class MyBot(ActivityHandler):
 
         # Save the set of supported YAMLs in an array
         supported_yaml_urls = [
-            "https://api.speak.com/openapi.yaml", 
-            "https://www.klarna.com/us/shopping/public/openai/v0/api-docs/"]
+            "https://api.speak.com/openapi.yaml", # (works)
+            "https://www.klarna.com/us/shopping/public/openai/v0/api-docs/", # (works)
+            "https://www.transvribe.com/ai-plugin/openapi.yaml", # Undestands YouTube videos
+            "https://chatgpt-plugin-ts.transitive-bullshit.workers.dev/openapi.json", # Generates ASII art
+            "https://www.greenyroad.com/openapi.yaml", # Reads URLs and provides context
+            "https://api.schooldigger.com/swagger/docs/v2.0", # Information about school districts
+            #"https://api.tasty.co/.well-known/openapi.yaml", # Recipes
+            "https://www.wolframalpha.com/.well-known/apispec.json", # Wolfram Alpha
+            "https://www.freetv-app.com/openapi.json", # Latest news
+            "https://chatgpt-plugin-dexa-lex-fridman.transitive-bullshit.workers.dev/openapi.json", # Searches Lex Friedman's podcast
+            "https://websearch.plugsugar.com/api/openapi_yaml", # Search web (works)
+            "https://server.shop.app/openai/v1/api.json", # Search for products
+            "https://gptweather.skirano.repl.co/openapi.yaml", # Weather
+        ]
 
         # Create a list of natural language tools
         natural_language_tools = []
